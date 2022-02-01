@@ -18,6 +18,9 @@ body {
 .table img {
     width: 150px;
 }
+.selected {
+    visibility: hidden;
+}
 </style>
 
 
@@ -146,6 +149,16 @@ function addClassToLinks(){
 
 
 //EX11: Write a function to toggle a CSS class for all the images in the table; that class should set the visibility of the image
+
+const setAllImgToSelected = function () {
+    let allImgNodes = document.querySelectorAll ('img')
+    for (imgNode of allImgNodes) {
+        imgNode.classList.toggle ("selected")
+    }
+
+
+}
+
 //EX12: Write a function to color the price of the products in a different one every time it's invoked
 
 </script>
